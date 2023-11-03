@@ -55,6 +55,9 @@
         align-items: center;
 
         .logo {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2em;
             flex-grow: 1;
             > img {
                 height: 24px;
@@ -241,7 +244,7 @@
             .bullet {
                 height: 5px;
                 width: 5px;
-                background: grey;
+                background: hsla(0, 0%, 100%, 50%);
                 border-radius: 50%;
             }
 

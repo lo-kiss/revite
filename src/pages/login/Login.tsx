@@ -57,11 +57,7 @@ export default observer(() => {
                 </Helmet>
                 <div className={styles.content}>
                     <div className={styles.nav}>
-                        <a className={styles.logo}>
-                            {!("native" in window) && (
-                                <img src={wideSVG} draggable={false} />
-                            )}
-                        </a>
+                        <p className={styles.logo}>gooey</p>
                         <LocaleSelector />
                     </div>
                     {/*<div className={styles.middle}>*/}
@@ -98,28 +94,16 @@ export default observer(() => {
                         <div className={styles.links}>
                             <div className={styles.socials}>
                                 <a
-                                    href="https://github.com/revoltchat"
+                                    href="https://github.com/lo-kiss/revite"
                                     target="_blank"
                                     rel="noreferrer">
                                     <Github size={24} />
-                                </a>
-                                <a
-                                    href="https://twitter.com/revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Twitter size={24} />
-                                </a>
-                                <a
-                                    href="https://mastodon.social/@revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Mastodon size={24} />
                                 </a>
                             </div>
                             <div className={styles.bullet} />
                             <div className={styles.revolt}>
                                 <a
-                                    href="https://revolt.chat/about"
+                                    href="https://revolt.chat"
                                     target="_blank"
                                     rel="noreferrer">
                                     <Text id="general.about" />
@@ -138,14 +122,7 @@ export default observer(() => {
                                 </a>
                             </div>
                         </div>
-                        <a
-                            className={styles.attribution}
-                            href="https://unsplash.com/@fakurian"
-                            target="_blank"
-                            rel="noreferrer">
-                            <Text id="general.image_by" /> &lrm;@fakurian &rlm;·
-                            unsplash.com
-                        </a>
+                        <p><Text id="general.image_by" /> Loki Calmito</p>
                     </div>
                 </div>
             </div>
