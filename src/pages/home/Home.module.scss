@@ -1,6 +1,5 @@
 .home {
     height: 100%;
-    user-select: none;
     position: relative;
 
     .homeScreen {
@@ -15,42 +14,14 @@
             margin: 20px 0;
             font-size: 48px;
             text-align: center;
-
-            img {
-                height: 36px;
-            }
+            user-select: none;
         }
 
-        a {
-            font-size: 13px;
-        }
-
-        .actions {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-            max-width: 650px;
-            margin-bottom: 30px;
-
-            a {
-                width: 100%;
-
-                div {
-                    margin: 0;
-                }
-            }
-
-            @media (max-width: 600px) {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            > * > * {
-                height: 100%;
-            }
+        .customChangelog {
+            background: var(--background);
+            text-align: left;
+            padding: 1rem;
+            border-radius: 10px;
         }
     }
-}
-
-[data-light="true"] .home svg {
-    filter: invert(100%);
 }

@@ -107,96 +107,15 @@ export default observer(() => {
                         <h3>
                             <Text id="app.special.modals.onboarding.welcome" />
                             <br />
-                            <img src={wideSVG} />
+                            GOOEY
                         </h3>
-                        <div className={styles.actions}>
-                            <a
-                                onClick={() =>
-                                    modalController.push({
-                                        type: "create_group",
-                                    })
-                                }>
-                                <CategoryButton
-                                    action="chevron"
-                                    icon={<PlusCircle size={32} />}
-                                    description={
-                                        <Text id="app.home.group_desc" />
-                                    }>
-                                    <Text id="app.home.group" />
-                                </CategoryButton>
-                            </a>
-                            <Link to="/discover">
-                                <a>
-                                    <CategoryButton
-                                        action="chevron"
-                                        icon={<Compass size={32} />}
-                                        description={
-                                            <Text id="app.home.discover_desc" />
-                                        }>
-                                        <Text id="app.home.discover" />
-                                    </CategoryButton>
-                                </a>
-                            </Link>
-
-                            {client.servers.get(
-                                "01F7ZSBSFHQ8TA81725KQCSDDP",
-                            ) ? (
-                                <Link to="/server/01F7ZSBSFHQ8TA81725KQCSDDP">
-                                    <CategoryButton
-                                        action="chevron"
-                                        icon={<RightArrowCircle size={32} />}
-                                        description={
-                                            <Text id="app.home.goto-testers_desc" />
-                                        }>
-                                        <Text id="app.home.goto-testers" />
-                                    </CategoryButton>
-                                </Link>
-                            ) : (
-                                <Link to="/invite/Testers">
-                                    <CategoryButton
-                                        action="chevron"
-                                        icon={<Group size={32} />}
-                                        description={
-                                            <Text id="app.home.join-testers_desc" />
-                                        }>
-                                        <Text id="app.home.join-testers" />
-                                    </CategoryButton>
-                                </Link>
-                            )}
-
-                            <Link to="/settings/feedback">
-                                <CategoryButton
-                                    action="chevron"
-                                    icon={<Megaphone size={32} />}
-                                    description={
-                                        <Text id="app.home.feedback_desc" />
-                                    }>
-                                    <Text id="app.home.feedback" />
-                                </CategoryButton>
-                            </Link>
-                            <a
-                                href="https://insrt.uk/donate"
-                                target="_blank"
-                                rel="noreferrer">
-                                <CategoryButton
-                                    action="external"
-                                    description={
-                                        <Text id="app.home.donate_desc" />
-                                    }
-                                    icon={<Money size={32} />}>
-                                    <Text id="app.home.donate" />
-                                </CategoryButton>
-                            </a>
-                            <Link to="/settings">
-                                <CategoryButton
-                                    action="chevron"
-                                    description={
-                                        <Text id="app.home.settings-tooltip" />
-                                    }
-                                    icon={<Cog size={32} />}>
-                                    <Text id="app.home.settings" />
-                                </CategoryButton>
-                            </Link>
+                        <div className={styles.customChangelog}>
+                            <h4>Changes to this custom client:</h4>
+                            <ul>
+                                <li>Sweeney login page</li>
+                                <li>Wider emoji</li>
+                                <li>Cat ears for everyone</li>
+                            </ul>
                         </div>
                         {isDecember && (
                             <a href="#" onClick={toggleSeasonalTheme}>
